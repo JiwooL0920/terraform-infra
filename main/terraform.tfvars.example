@@ -1,0 +1,20 @@
+# Environment Configuration
+env = "dev"
+
+# Cluster Configuration
+cluster_type         = "services"
+kind_cluster_name    = "dev-services-amer"
+kind_release_version = "v1.31.0"  # Kubernetes version for KIND nodes
+
+# Region (for tagging purposes)
+target_region = "us-west-1"
+
+# Common tags for resource organization
+common_tags = {
+  Application_ID = "homelab"
+  Environment    = "DEV"
+  Created_by     = "terraform"
+  Contact        = "jiwool0920@gmail.com"
+  Managed_by     = "terraform"
+  Purpose        = "fluxcd-gitops-platform"
+}
